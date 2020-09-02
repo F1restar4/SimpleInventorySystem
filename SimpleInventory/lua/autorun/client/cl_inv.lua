@@ -153,8 +153,6 @@ net.Receive("SMPLInventoryLoad", function()
 	ModelData = models
 	if waitingForLoad then InventoryMenu.List:UpdateInventory(Inventory) waitingForLoad = false end
 	if first && table.Count(Inventory) > 0 then chat.AddText(Color(0,255,255), "[Inventory Sys] ", Color(255,255,255), "Inventory loaded successfully") end
-	PrintTable(Inventory)
-	PrintTable(ModelData)
 end) 
 
 hook.Add("ShowHelp", "SMPLInventoryOpen", function(ply)
